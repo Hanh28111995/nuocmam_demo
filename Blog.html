@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hong Duc Fishsauce - Blog Page</title>
     <!-- icon -->
-    <link rel="icon" href="./asset/image//icon_img/favicon.png" sizes="32x32">
+    <link rel="icon" href="./asset/image/icon_img/favicon.png" sizes="32x32">
     <!-- font gg -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -253,9 +253,11 @@
                             </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="blog_foot_content row">
                     <button id="expand-item" class="btn-buy mx-auto">See more</button>
                 </div>
-
             </div>
         </section>
         <section class="instagram_part">
@@ -385,8 +387,7 @@
 
 
     <!-- slick slider -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -395,7 +396,6 @@
             var items = 8;
             var show = 3;
             $('#expand-item').click(function () {
-                console.log('xxxxxxx')
                 shown = $('.blog_main_content .col-lg-4:visible').length + 3;
                 if (shown < items) {
                     $('.blog_main_content .col-lg-4:lt(' + shown + ')').show(300);
@@ -404,7 +404,6 @@
                     $('.more').hide();
                 }
             })
-          
         });
     </script>
     <!-- bs4 + fontansome -->

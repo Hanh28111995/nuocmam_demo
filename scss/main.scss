@@ -4,13 +4,14 @@
 @import "./component/button";
 
 body {
-    .blog_page .blog_part .blog_content .blog_main_content .col-lg-4{
+    .blog_page .blog_part .blog_content .blog_main_content .col-lg-4 {
         display: none;
     }
+
     .yel-color {
         color: #FDC040;
     }
-     
+
     .icon-custom {
         opacity: .7;
         margin: 0 auto;
@@ -978,7 +979,6 @@ body {
 
                 .blog_main_content {
                     padding-top: 100px;
-                    padding-bottom: 100px;
 
                     .blog_item {
                         margin-bottom: 2rem;
@@ -993,8 +993,8 @@ body {
 
                             img {
                                 position: relative;
-                                top:50%;
-                                transform: translateY(-50%);                                
+                                top: 50%;
+                                transform: translateY(-50%);
                                 width: 100%;
                                 cursor: pointer;
                                 object-position: center;
@@ -1023,6 +1023,10 @@ body {
 
                         }
                     }
+                }
+
+                .blog_foot_content {
+                    padding-bottom: 100px;
                 }
             }
         }
