@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'SVN-Have Heart 2';
     src: url('../../asset/fonts/SVN-Have\ Heart\ 2.ttf');
@@ -9,4 +8,17 @@
     font-family: 'Ubuntu Italic';
     src: url('../../asset/fonts/Ubuntu-Italic.ttf');
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oldicon';
+    src: url('../../asset/fonts/Oldicon.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FoodIcons';
+    src: url('../../asset/fonts/Foodicons.woff') format('woff');
+    font-style: normal;
+    font-display: swap
 }
