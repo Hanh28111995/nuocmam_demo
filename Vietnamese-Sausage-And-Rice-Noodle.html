@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hong Duc Fishsauce - Vietnamese Sausage And Rice Noodle</title>
     <!-- icon -->
-    <link rel="icon" href="./asset/image//icon_img/favicon.png" sizes="32x32">
+    <link rel="icon" href="./asset/image/icon_img/favicon.png" sizes="32x32">
     <!-- font gg -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +82,7 @@
 
         <section class="post_part">
             <div class="post_content container">
-                <div class="post_head_content">
+                <div class="post_head_content" >
                     <h3>Bún Nem Nướng [Vietnamese Sausage And Rice Noodle]</h3>
                     <p>
                         <span class="user_post_detail_1"><i class="fa-solid fa-user"></i>&nbsp; POSTED BY:</span>
@@ -95,23 +95,22 @@
 
                     <div class="table_content">
                         <p class="header_text">Table of Content</p>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
+                        <a class="title_ref">
                             The Soul of Vietnamese cuisine
                         </a>
 
                         <ul class="table_list">
                             <li>
-                                <a href="#title-2-1" onclick="rollUpInPost('title-2-1', event)">
-                                    Part 1: Ingredients
+                                <a href="#title-1" onclick="rollUpInPost('title-1', event)">
+                                    Part 1: INGREDIENTS
+                            </li>
+                            <li>
+                                <a href="#title-2" onclick="rollUpInPost('title-2', event)">
+                                    Part 2: INSTRUCTIONS
                                 </a>
                             </li>
                             <li>
-                                <a href="#title-2-2" onclick="rollUpInPost('title-2-2', event)">
-                                    Part 2: Instructions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#title-2-3" onclick="rollUpInPost('title-2-3', event)">
+                                <a href="#title-3" onclick="rollUpInPost('title-3', event)">
                                     Part 3: Recommended Products
                                 </a>
                             </li>
@@ -137,7 +136,7 @@
                         </p>
 
                         <div class="row col-12 mx-0 step_consume">
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-food yel-color icon-custom"></span>
@@ -146,7 +145,7 @@
                                     <div>4 servings</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-clock yel-color icon-custom"></span>
@@ -155,7 +154,7 @@
                                     <div>30 minutes</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-cooking yel-color icon-custom"></span>
@@ -164,7 +163,7 @@
                                     <div>30 minutes</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-fire yel-color icon-custom"></span>
@@ -175,87 +174,191 @@
                             </div>
                         </div>
 
-                        <p class="header_text" id="title-1">Ingredients</p>
-                        <p>Serving Size: 4</p>
-
-                        <p>
+                        <p class="header_text" id="title-1">Part 1: INGREDIENTS</p>
+                        <p class="header_text">
                             Nước Mắm Chấm Recipe [Seasoned Fish Sauce/Salad Dressing]
                         </p>
-                        <ul>
-                            <li>1/4 cup Lemon Juice </li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox1" class="checkbox-custom-recipe"
+                                    name="ingredients1">
+                                <label for="checkbox1" class="checkbox-custom-label-recipe">1/4 cup Lemon Juice</label>
+                            </li>
 
-                            <li>1/4 cup Son Fish Sauce</li>
+                            <li>
+                                <input type="checkbox" id="checkbox2" class="checkbox-custom-recipe"
+                                    name="ingredients2">
+                                <label for="checkbox2" class="checkbox-custom-label-recipe">1/4 cup Son Fish
+                                    Sauce</label>
+                            </li>
 
-                            <li>2 tsp Chopped Thai Chili</li>
+                            <li>
+                                <input type="checkbox" id="checkbox3" class="checkbox-custom-recipe"
+                                    name="ingredients3">
+                                <label for="checkbox3" class="checkbox-custom-label-recipe">2 tsp Chopped Thai
+                                    Chili</label>
+                            </li>
 
-                            <li>2 tsp Minced Garlic</li>
+                            <li>
+                                <input type="checkbox" id="checkbox4" class="checkbox-custom-recipe"
+                                    name="ingredients4">
+                                <label for="checkbox4" class="checkbox-custom-label-recipe">2 tsp Minced Garlic</label>
+                            </li>
 
-                            <li>2 tbsp Minced Shallot</li>
+                            <li>
+                                <input type="checkbox" id="checkbox5" class="checkbox-custom-recipe"
+                                    name="ingredients5">
+                                <label for="checkbox5" class="checkbox-custom-label-recipe">2 tbsp Minced
+                                    Shallot</label>
+                            </li>
 
-                            <li>2 tsp Sambal (Fermented Chili Paste)</li>
-
-                            <li>3 tbsp Organic Sugar (or 1/3 tsp stevia)</li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">3 tbsp Organic Sugar (or 1/3
+                                    tsp stevia)</label>
+                            </li>
                         </ul>
-                        <br>
 
-                        <p>
+                        <p class="header_text" id="title-1">
                             Nem Nướng
                         </p>
-                        <ul>
-                            <li>2 tbsp Son Fish Sauce</li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">2 tbsp Son Fish
+                                    Sauce</label>
+                            </li>
 
-                            <li>Spice Tribe/Chef Tu Nem Nuong Sausage Seasoning</li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">Spice Tribe/Chef Tu Nem
+                                    Nuong Sausage Seasoning</label>
+                            </li>
                         </ul>
-
-
-                        <p>All the ingredients above are used for making Fish sauce for a family of 4-6 people. You can
-                            adjust the right ratio that is suitable according
-                            to the amount of servings and also your family’s taste. </p>
-                        <br>
-                        <p>
+                        <p class="header_text" id="title-1">
                             Rice Noodles
                         </p>
-                        <br>
-                        <p>
+                        <p class="header_text" id="title-1">
                             Pickled Carrots And Daikon
                         </p>
-                        <ul>
-                            <li>1 cup daikon (Cut into match sticks)</li>
-                            <li>1/4 teaspoon kosher salt</li>
-                            <li>1 teaspoon organic sugar</li>
-                            <li>1 cup rice vinegar (Unseasoned)</li>
-                            <li>2 cups filtered water</li>
-                            <li>2 clove peeled garlic</li>
-                            <li>1/4 ounce peeled ginger (Sliced)</li>
-                            <li>1 each jalapeno</li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1 cup daikon (Cut into match
+                                    sticks)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/4 teaspoon kosher
+                                    salt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1 teaspoon organic
+                                    sugar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1 teaspoon organic
+                                    sugar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">2 cups filtered
+                                    water</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">2 clove peeled
+                                    garlic</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/4 ounce peeled ginger
+                                    (Sliced)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/4 ounce peeled ginger
+                                    (Sliced)</label>
+                            </li>
                         </ul>
 
                         <br>
-                        <p>
+                        <p class="header_text" id="title-1">
                             Scallion Oil
                         </p>
-                        <ul>
-                            <li>2 tbsp high heat cooking oil</li>
-                            <li>1/4 tsp Son Fish Sauce</li>
-                            <li>1/8 tsp Rice Vinegar</li>
-                            <li>1/10 tsp Kosher Salt</li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">2 tbsp high heat cooking
+                                    oil</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/4 tsp Son Fish
+                                    Sauce</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/8 tsp Rice Vinegar</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/10 tsp Kosher Salt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/8 tsp Rice Vinegar</label>
+                            </li>
                         </ul>
 
                         <br>
-                        <p>
+                        <p class="header_text" id="title-1">
                             Garnishes
                         </p>
-                        <ul>
-                            <li>2 each Cucumber (cut into ribbons or spears)</li>
-                            <li>1/2 cup Chopped Toasted Peanuts</li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">2 each Cucumber (cut into
+                                    ribbons or spears)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe">1/2 cup Chopped Toasted
+                                    Peanuts</label>
+                            </li>
                         </ul>
 
-                        <p class="header_text" id="title-2">Instructions</p>
+                        <p class="header_text" id="title-2">Part 2: INSTRUCTIONS</p>
 
-                        <p>
+                        <p class="header_text" ">
                             Nước Mắm Chấm Recipe [Seasoned Fish Sauce/Salad Dressing]
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>Chop Thai Chili</li>
 
                             <li>Mince garlic and shallot</li>
@@ -272,13 +375,13 @@
                             <li>Then season the sauce with 3 tbsp Organic Sugar (or 1/3 tsp stevia)</li>
 
                             <li>And last, stir the sauce until the ingredients all well incorporated.</li>
-                        </ul>
-                        <br>
+                            </ul>
+                            <br>
 
-                        <p>
+                        <p class="header_text" id="title-2">
                             Nem Nướng (Vietnamese Sausage)
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>Ground pork needs to be refrigerated for at least 8 hours prior to use.</li>
 
                             <li>Make a slurry with Son Fish Sauce and Nem Nuong Sausage Seasoning.</li>
@@ -296,10 +399,10 @@
                         </ul>
                         <br>
 
-                        <p>
+                        <p class="header_text">
                             Cook Rice Noodles
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>Put on a pot of boiling water</li>
 
                             <li>Put noodles, stirring occasionally</li>
@@ -315,10 +418,10 @@
                         </ul>
                         <br>
 
-                        <p>
+                        <p class="header_text">
                             Vietnamese Pickles
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>Cut carrots and daikon into 1/8″ thick x 2-3″ long</li>
 
                             <li>In a medium-size pot, add 1/4 tsp kosher salt, 1/2 tsp sugar, 1 cup rice cinegar, 2 cups
@@ -341,10 +444,10 @@
                         </ul>
                         <br>
 
-                        <p>
+                        <p class="header_text">
                             Make Scallion Oil
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>In a small saucepan, preheat oil 2 tbsp] on low for 1 minute</li>
 
                             <li>Turn off heat</li>
@@ -359,10 +462,10 @@
                         </ul>
                         <br>
 
-                        <p>
+                        <p class="header_text">
                             Assemble
                         </p>
-                        <ul>
+                        <ul class="introduction-list">
                             <li>In a large soup bowl, first, start with rice noodles</li>
 
                             <li>Step 39 -</li>
@@ -372,6 +475,23 @@
                             <li>Finish with one spoon full of scallion oil</li>
                         </ul>
                         <br>
+                        <p class="header_text" id="title-3">Recommended Products</p>
+                        <div class="row col-12 products-list">
+                            <div class="col-4">
+                                <div class="img_post ">
+                                    <img src="https://spicetribe.com/cdn/shop/products/FishSause_1080x1080_b6ad7391-bad8-4c33-a32b-35d6148a7707_3000x.jpg?v=1667874118"
+                                        alt="">
+                                    <span>Artisanal Aged Son Fish Sauce</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="img_post ">
+                                    <img src="https://spicetribe.com/cdn/shop/files/rsz_spicetribe_cheftu_nemnuongsausage_900x.png?v=1696011326"
+                                        alt="">
+                                    <span>Nem Nướng Sausage Mix</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -387,7 +507,6 @@
                         <li> </li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
@@ -431,7 +550,6 @@
 
     <!-- slick slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {

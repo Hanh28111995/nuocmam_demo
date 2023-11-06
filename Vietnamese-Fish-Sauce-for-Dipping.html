@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hong Duc Fishsauce - Vietnamese Fish Sauce for Dipping</title>
     <!-- icon -->
-    <link rel="icon" href="./asset/image//icon_img/favicon.png" sizes="32x32">
+    <link rel="icon" href="./asset/image/icon_img/favicon.png" sizes="32x32">
     <!-- font gg -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,46 +95,23 @@
 
                     <div class="table_content">
                         <p class="header_text">Table of Content</p>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
-                            Why Is Everyone So Confused About Fish Sauce?
-                        </a>
-                        <a class="title_ref" href="#title-2" onclick="rollUpInPost('title-1', event)">
-                            So, Is This A recipe For Fish Sauce or A Dipping Sauce?
-                        </a>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
-                            How Long Did You Say It Takes to Make Fish Sauce?
-                        </a>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
-                            Is Fish Sauce the Same Thing as Fish Oil?
-                        </a>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
-                            What You Need
-                        </a>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
-                            My Favorite Foods to Eat With Vietnamese Dipping Fish Sauce
-                        </a>
-                        <a class="title_ref" href="#title-1" onclick="rollUpInPost('title-1', event)">
+                        <a class="title_ref">
                             Vietnamese Fish Sauce for Dipping
                         </a>
                         <ul class="table_list">
                             <li>
-                                <a href="#title-2-1" onclick="rollUpInPost('title-2-1', event)">
-                                    Part 1: Description
+                                <a href="#title-1" onclick="rollUpInPost('title-1', event)">
+                                    Part 1: Ingredients
                                 </a>
                             </li>
                             <li>
-                                <a href="#title-2-1" onclick="rollUpInPost('title-2-1', event)">
-                                    Part 2: Ingredients
+                                <a href="#title-2" onclick="rollUpInPost('title-2', event)">
+                                    Part 2: Directions
                                 </a>
                             </li>
                             <li>
-                                <a href="#title-2-2" onclick="rollUpInPost('title-2-2', event)">
-                                    Part 3: Directions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#title-2-3" onclick="rollUpInPost('title-2-3', event)">
-                                    Part 4: Notes
+                                <a href="#title-3" onclick="rollUpInPost('title-3', event)">
+                                    Part 3: Notes
                                 </a>
                             </li>
                         </ul>
@@ -142,7 +119,7 @@
 
                     <div class="text_content">
                         <div class="row col-12 mx-0 step_consume">
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-food yel-color icon-custom"></span>
@@ -151,7 +128,7 @@
                                     <div>1 servings</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-clock yel-color icon-custom"></span>
@@ -160,7 +137,7 @@
                                     <div>30 minutes</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-cooking yel-color icon-custom"></span>
@@ -169,7 +146,7 @@
                                     <div>3 minutes</div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 item">
                                 <div class="step_item">
                                     <div>
                                         <span class="icon-fire yel-color icon-custom"></span>
@@ -213,21 +190,55 @@
                             the sugar, as well.
                         </p>
                         <p class="header_text" id="title-1">Ingredients</p>
-                        <ul>
-                            <li>1 whole Fresh Lime</li>
-                            <li>3 Chili Peppers (Dried)</li>
-                            <li>2 tbsp Son Premium Fish Sauce</li>
-                            <li>1 pinch Goya Minced Garlic</li>
-                            <li>2 tbsp Sugar</li>
-                            <li>2 slices Fresh Apricot</li>
-                            <li>7 tbsp Water</li>
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="checkbox1" class="checkbox-custom-recipe"
+                                    name="ingredients1">
+                                <label for="checkbox1" class="checkbox-custom-label-recipe"> 1 whole Fresh Lime</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox2" class="checkbox-custom-recipe"
+                                    name="ingredients2">
+                                <label for="checkbox2" class="checkbox-custom-label-recipe"> 3 Chili Peppers
+                                    (Dried)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox3" class="checkbox-custom-recipe"
+                                    name="ingredients3">
+                                <label for="checkbox3" class="checkbox-custom-label-recipe"> 2 tbsp Son Premium Fish
+                                    Sauce</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox4" class="checkbox-custom-recipe"
+                                    name="ingredients4">
+                                <label for="checkbox4" class="checkbox-custom-label-recipe"> 1 pinch Goya Minced
+                                    Garlic</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox5" class="checkbox-custom-recipe"
+                                    name="ingredients5">
+                                <label for="checkbox5" class="checkbox-custom-label-recipe"> 2 tbsp Sugar</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6" class="checkbox-custom-recipe"
+                                    name="ingredients6">
+                                <label for="checkbox6" class="checkbox-custom-label-recipe"> 2 slices Fresh
+                                    Apricot</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox7" class="checkbox-custom-recipe"
+                                    name="ingredients7">
+                                <label for="checkbox7" class="checkbox-custom-label-recipe"> 7 tbsp Water</label>
+                            </li>
                         </ul>
                         <div class="img_post">
                             <img src="https://www.seasonalcookbook.com/wp-content/uploads/2022/07/Fish-Sauce-for-Dipping-Ingredients-on-Plate.jpg"
                                 alt="">
                         </div>
-                        <p class="header_text" id="title-1">Dỉrections</p>
-                        <ol style="list-style: decimal;">
+                        <p class="header_text" id="title-2">Directions</p>
+                        <ul class="introduction-list">
                             <li>Combine 7 tablespoons of water, 2 tablespoons of sugar, and the juice from a freshly
                                 squeezed lime in a small pot.</li>
                             <li>Heat the sugar/water/lime juice mixture over high heat on your stove top, stirring all
@@ -251,13 +262,142 @@
                                 Fish Sauce. WHAT DID YOU SAY? Yes, the cool, semi-sweet flavor of the apricot slices
                                 infuse very nicely with the strong and powerful flavors of the other ingredients. After
                                 chilling your ‘sauce’ overnight, the flavor profile really begins to take shape!</li>
+
+                        </ul>
+                        <br>
+                        <div class="img_post">
+                            <img src="https://www.seasonalcookbook.com/wp-content/uploads/2022/07/Vietnamese-Fish-Sauce-in-Bowl.jpg"
+                                alt="">
+                        </div>
+                        <p class="header_text" id="title-3">NOTES</p>
+                        <ul class="note-list">
                             <li>
-                                <div class="img_post">
-                                    <img src="https://www.seasonalcookbook.com/wp-content/uploads/2022/07/Vietnamese-Fish-Sauce-in-Bowl.jpg"
-                                        alt="">
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Feel free to add your favorite brand of fish sauce to your sugar/water/lime
+                                            juice mixture. But add it one tablespoon at a time (and remember to taste as
+                                            you go)
+                                        </p>
+                                    </div>
                                 </div>
                             </li>
-                        </ol>
+                            <li>
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Feel free to add your favorite brand of fish sauce to your sugar/water/lime
+                                            juice mixture. But add it one tablespoon at a time (and remember to taste as
+                                            you go)
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            I used dried chili peppers in this recipe and also dropped in the seeds.
+                                            This will add some extra heat to your dipping sauce. Feel free to use fresh
+                                            sliced chili peppers and experiment with adding/not adding the seeds.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            I added a non-traditional ingredient to my ‘Vietnamese’ Dipping Fish Sauce –
+                                            Apricot Slices (SURPRISE). This had a more dramatic effect on the flavor
+                                            after 24 hours in the refrigerator than I anticipated – in a good way!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Looking for a VERY economical Meal Delivery Service? Try EveryPlate
+                                            <a href="https://www.kqzyfj.com/click-100318953-14074826" target="_blank"
+                                                rel="noreferrer noopener nofollow">USING THIS LINK FOR A STEEP DISCOUNT
+                                                ON
+                                                YOUR FIRST 3 BOXES.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="note-list-item">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F7941D"
+                                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            And if you want to be notified whenever I post a new recipe or article,
+                                            <a href="https://seasonalcookbook.aweb.page/p/e7605305-d5e3-4009-b503-c928f1d24c1c"
+                                                target="_blank" rel="noopener nofollow" title="">please subscribe to my
+                                                Email List.</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -268,7 +408,7 @@
                     </div>
                     <p class="header_text">Related Posts</p>
                     <ul>
-                        <li> </li>
+                        <li></li>
                         <li> </li>
                         <li> </li>
                     </ul>
@@ -317,7 +457,6 @@
 
     <!-- slick slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
