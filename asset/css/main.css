@@ -1282,8 +1282,8 @@ body .contact_page .contact_part .contact_content .contact_note .contact-note-3 
 }
 body .blog_page {
   background-image: url("/../asset/image/bg_img/blog_bg_bottom.png");
-  background-position: bottom -90px left 0;
-  background-size: contain;
+  background-position: bottom 116px left 0;
+  background-size: 100% 1350px;
   background-repeat: no-repeat;
 }
 body .blog_page .blog_part {
@@ -1305,6 +1305,11 @@ body .blog_page .blog_part .blog_content .blog_main_content {
 body .blog_page .blog_part .blog_content .blog_main_content .blog_item {
   margin-bottom: 2rem;
   padding: 20px;
+}
+body .blog_page .blog_part .blog_content .blog_main_content .blog_item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 body .blog_page .blog_part .blog_content .blog_main_content .blog_item .wrapper-img {
   width: 100%;
@@ -1344,81 +1349,39 @@ body .blog_page .instagram_part {
   background-position: bottom 20px right 20px;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 3rem;
 }
 body .blog_page .instagram_part .instagram_head_content {
   padding-top: 150px;
   padding-bottom: 50px;
   text-align: center;
 }
+body .blog_page .instagram_part .instagram_main_content {
+  padding-top: 3rem;
+}
 body .blog_page .instagram_part .instagram_main_content .post_wrap {
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 10px;
 }
 body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item {
-  padding: 10px 0;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
 }
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 8px;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head > img {
-  width: 32px;
-  margin-left: 15px;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name {
-  margin-left: 15px;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name .name {
-  font-family: "Inter";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  text-align: left;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name .name span img {
-  width: 15px;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name .address {
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-  text-align: left;
-  margin-bottom: 0;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head button {
-  margin-right: 15px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 6px 11px;
-  border-radius: 3px;
-  background-color: #0095F6;
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
 body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content img {
   width: 100%;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_foot {
-  padding: 15px 0;
-}
-body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_foot a {
-  font-family: "Inter";
-  font-weight: 700;
-  text-align: left;
-  margin-left: 15px;
-  color: #0196F6;
+  height: inherit;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body .post_page {
   background-color: #fff;
@@ -1653,21 +1616,16 @@ body .home_page .customer_infor_part .mail_input_slides .slide_item .customer_in
   body .about_page .culture_part {
     padding-top: 50px;
   }
-  body .blog_page .blog_part {
-    background-position: top -161px left 0;
-    background-size: 100% 500px;
-  }
   body .blog_page {
-    background-position: bottom 0px left 0;
-    background-size: 100% 1050px;
+    background-size: 100% 1290px;
+  }
+  body .blog_page .blog_part {
+    background-size: 100% 500px;
   }
 }
 @media (max-width: 1280px) {
   body .blog_page .blog_part {
     background-size: 100% 500px;
-  }
-  body .blog_page {
-    background-size: 100% 900px;
   }
   body .about_page .culture_part .culture_content .culture_content_wrap {
     width: 28%;
@@ -1716,8 +1674,7 @@ body .home_page .customer_infor_part .mail_input_slides .slide_item .customer_in
     height: 150px;
   }
   body .blog_page {
-    background-position: bottom 0px left 0;
-    background-size: 100% 800px;
+    background-position: bottom 116px left 0;
   }
   body .contact_page .contact_part .contact_content .contact_note {
     -webkit-transform: translateY(10px);
@@ -1823,7 +1780,7 @@ body .home_page .customer_infor_part .mail_input_slides .slide_item .customer_in
   }
   body .blog_page {
     background-position: bottom 0px left 50%;
-    background-size: 500% 43%;
+    background-size: 500% 66%;
   }
   body .blog_page .instagram_part {
     background-position: center, center;
@@ -1988,12 +1945,31 @@ body .home_page .customer_infor_part .mail_input_slides .slide_item .customer_in
   }
 }
 @media (max-width: 576px) {
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head > img {
+    margin-left: 5px;
+  }
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_foot {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name .name,
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head .post_name .address {
+    font-size: 12px;
+  }
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_head button {
+    font-size: 10px;
+    padding: 6px 6px;
+    margin-right: 5px;
+  }
+  body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content {
+    height: 365px;
+  }
   body .blog_page .blog_part .blog_content .blog_main_content .blog_item .wrapper-img {
     height: 200px;
   }
   body .blog_page {
     background-position: bottom 0px left 50%;
-    background-size: 555% 38%;
+    background-size: 555% 60%;
   }
   body .home_page .customer_infor_part .mail_input_slides .slide_item .customer_infor_form .subscribe .icon-wrap {
     padding-left: 10px;
