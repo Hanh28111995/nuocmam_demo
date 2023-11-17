@@ -165,25 +165,25 @@
             <h2 class="text-center">GALLERY</h2>
             <div class="client_slides">
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_0.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_0 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_1.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_1 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_2.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_2 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_3.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_3 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_4.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_4 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_5.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_5 (1).png">
                 </div>
                 <div class="cover_img ">
-                    <img src="./asset/image/bg_item_img/gallery_slider_6.png">
+                    <img src="./asset/image/bg_item_img/gallery_slider_6 (1).png">
                 </div>
             </div>
         </section>
@@ -376,11 +376,12 @@
                     dots: false,
                     infinite: false,
                     autoplay: true,
-                    speed: 500,
+                    autoplaySpeed: 2000,
                     fade: true,
                     cssEase: 'linear',
                     prevArrow: '<button type="button" class="prev_arr"><i class="fa-solid fa-angle-left"></i></button>',
-                    nextArrow: '<button type="button" class="next_arr"><i class="fa-solid fa-angle-right"></i></button>'
+                    nextArrow: '<button type="button" class="next_arr"><i class="fa-solid fa-angle-right"></i></button>',
+                    pauseOnHover: false,
                 }
             );
             $('.img-slider').slick(
@@ -389,9 +390,9 @@
                     arrows: false,
                     infinite: true,
                     autoplay: true,
-                    speed: 500,
+                    autoplaySpeed: 1500,
                     fade: true,
-                    cssEase: 'linear',
+                    cssEase: 'linear',                    
                 }
             );
         });

@@ -1357,6 +1357,7 @@ body .blog_page .instagram_part .instagram_head_content {
 }
 body .blog_page .instagram_part .instagram_main_content {
   padding-top: 3rem;
+  padding-bottom: 7rem;
 }
 body .blog_page .instagram_part .instagram_main_content .post_wrap {
   padding-left: 3px;
@@ -1368,11 +1369,25 @@ body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item {
   border-radius: 4px;
   -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item a {
+  text-decoration: none;
+  color: #f9f9f9;
 }
 body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content {
   width: 100%;
-  height: 450px;
+  height: 420px;
   overflow: hidden;
+  position: relative;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content::hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .post_item_content img {
   width: 100%;
@@ -1382,6 +1397,47 @@ body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .p
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .likeBlock,
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .cmtBlock {
+  text-align: center;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .likeBlock .dataBlock,
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .likeBlock i,
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .cmtBlock .dataBlock,
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .cmtBlock i {
+  font-size: 22px;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .likeBlock .dataBlock,
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .cmtBlock .dataBlock {
+  font-weight: 700;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .likeBlock {
+  padding-left: 15%;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item .overlay .cmtBlock {
+  padding-right: 15%;
+}
+body .blog_page .instagram_part .instagram_main_content .post_wrap .post_item:hover .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 body .post_page {
   background-color: #fff;
@@ -1459,6 +1515,9 @@ body .post_page .post_part .post_content .post_body_content .text_content .img_p
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 33px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 body .post_page .post_part .post_content .post_body_content .text_content .img_post span {
   display: inline;
